@@ -16,3 +16,4 @@ examples/embeddedApp/embeddedApp
 backup/
 lib/
 
+*.swp

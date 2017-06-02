@@ -1,7 +1,8 @@
 # Filish
 Simple Windows utility to compute hash checksums for files and check them using the Windows Explorer context menu
 
-![Image of Filish](https://github.com/roobie/Filish/tree/master/assets/filish.png)
+![Image of Filish](https://raw.githubusercontent.com/roobie/Filish/master/assets/filish.PNG)
+
 
 
 
