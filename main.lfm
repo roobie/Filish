@@ -1,0 +1,32 @@
+object MainForm: TMainForm
+  Left = 1150
+  Height = 179
+  Top = 214
+  Width = 478
+  Caption = 'MainForm'
+  ClientHeight = 179
+  ClientWidth = 478
+  OnActivate = FormActivate
+  LCLVersion = '1.6.4.0'
+  object StatusBarMain: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 156
+    Width = 478
+    Panels = <    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object Memo1: TMemo
+    Left = 8
+    Height = 138
+    Top = 8
+    Width = 462
+    Lines.Strings = (
+      'Memo1'
+    )
+    TabOrder = 1
+  end
+end
