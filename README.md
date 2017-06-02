@@ -1,6 +1,10 @@
 # Filish
 Simple Windows utility to compute hash checksums for files and check them using the Windows Explorer context menu
 
+![Image of Filish](https://github.com/roobie/Filish/tree/master/assets/filish.png)
+
+
+
 ## Building
 
 use lazbuild or build from lazarus directly.
