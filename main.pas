@@ -49,6 +49,7 @@ var
   Result: IHashResult;
   ResultStr: string;
   Fnamesig: string;
+  Sigtext: string;
 begin
   MainForm.Caption := 'Filish v1.0.0';
   Mode := ParamStr(1);
@@ -79,16 +80,22 @@ begin
     with TStringList.Create do
       try
         LoadFromFile(Fnamesig);
+
+        // purge line endings from the text
+        Sigtext := StringReplace(GetText, LineEnding, '', [rfReplaceAll]);
+
         Add(ResultStr);
+
         MainForm.Memo1.Text:=GetText;
-        if CompareText(ResultStr, GetText) = 0 then
+
+        if CompareText(ResultStr, Sigtext) = 0 then
         begin
-          MainForm.StatusBarMain.Panels[0].Text:='OK';
+          MainForm.StatusBarMain.Panels[0].Text:='OK: Match';
           //MainForm.Memo1.Text:='OK, hash of file matched contents of sig file';
         end
         else
         begin
-          MainForm.StatusBarMain.Panels[0].Text:='NOT OK';
+          MainForm.StatusBarMain.Panels[0].Text:='NOT OK: Does not match';
           //MainForm.Memo1.Text:='Warning! Hash of file does not match contents of sig file';
         end;
       finally
