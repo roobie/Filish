@@ -16,4 +16,5 @@ examples/embeddedApp/embeddedApp
 backup/
 lib/
 
+*.sig.txt
 *.swp
