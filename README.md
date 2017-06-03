@@ -5,12 +5,19 @@ the Windows Explorer context menu
 ![Image of Filish](https://raw.githubusercontent.com/roobie/Filish/master/assets/filish.PNG)
 
 
-## "Installing"
+## Installing (manual process, for now)
 
 1. [Download](https://github.com/roobie/Filish/releases) a release, and unzip it.
 2. Put the `Filish` folder in `C:\Program Files\`
-3. Import the `.reg` file (adds two entries in the Windows Explorer context menu)
+3. Import the `install.reg` file (adds two entries in the Windows Explorer
+   context menu)
 4. Done.
+
+## Uninstalling
+
+1. Import the `uninstall.reg`, to delete the registry keys added by `install.reg`
+2. Delete the `C:\Program Files\Filish` folder
+3. Done.
 
 
 ## Building
